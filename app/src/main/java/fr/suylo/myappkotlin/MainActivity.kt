@@ -55,6 +55,7 @@ class MainActivity : AppCompatActivity() {
                 this.qcm.add("2. Barcelone")
                 this.qcm.add("3. Séville")
                 if (view.id == R.id.answer_1){
+                    goodAnswers++
                     getAnswers(view, 33, this.qcm, true, R.id.answer_1)
                 } else {
                     getAnswers(view, 33, this.qcm, false, R.id.answer_1)
@@ -69,6 +70,7 @@ class MainActivity : AppCompatActivity() {
                 this.qcm.add("2. Milan")
                 this.qcm.add("3. Rome")
                 if (view.id == R.id.answer_1){
+                    goodAnswers++
                     getAnswers(view, 66, this.qcm, true, R.id.answer_1)
                 } else {
                     getAnswers(view, 66, this.qcm, false, R.id.answer_1)
@@ -78,6 +80,7 @@ class MainActivity : AppCompatActivity() {
             3 -> {
                 if (view.id == R.id.answer_3) {
                     this.qcm.clear()
+                    goodAnswers++
                     getAnswers(view, 100, this.qcm, true, R.id.answer_3)
                 } else {
                     this.qcm.clear()
@@ -94,7 +97,7 @@ class MainActivity : AppCompatActivity() {
         val askThree = findViewById<TextView>(R.id.answer_3)
         val pgBar = findViewById<ProgressBar>(R.id.progressBar)
 
-        if (reussi) {
+        // if (reussi) {
             if (questions.size > 0) {
                 question.setText(this.qcm[0])
                 askOne.setText(this.qcm[1])
@@ -110,13 +113,6 @@ class MainActivity : AppCompatActivity() {
                 askOne.textAlignment = View.TEXT_ALIGNMENT_CENTER
             }
             pgBar.progress = progBar
-            goodAnswers++
-            findViewById<TextView>(answer).setBackgroundResource(R.color.white)
-            findViewById<TextView>(answer).setTextColor(resources.getColor(R.color.black))
-        } else {
-            val correctAnswer = findViewById<TextView>(answer);
-            correctAnswer.setBackgroundResource(R.color.teal_200)
-            correctAnswer.setTextColor(resources.getColor(R.color.white))
-        }
+        //}
     }
 }
