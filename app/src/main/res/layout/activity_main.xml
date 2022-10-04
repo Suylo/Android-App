@@ -15,15 +15,14 @@
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="48dp"/>
     <TextView
-            android:text="Question de test ?"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/questionText"
+            android:layout_width="407dp"
+            android:layout_height="93dp" android:id="@+id/questionText"
             android:textSize="34sp" android:fontFamily="cursive"
-            android:textAlignment="center" android:textColor="#372F2F"
-            android:textStyle="bold" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintBottom_toTopOf="@+id/progressBar" android:layout_marginBottom="288dp"
-            app:layout_constraintTop_toBottomOf="@+id/textView" app:layout_constraintVertical_bias="1.0"/>
+            android:textAlignment="center" android:textColor="#202020"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="2dp" app:layout_constraintTop_toBottomOf="@+id/textView"
+            android:layout_marginTop="68dp" app:layout_constraintBottom_toTopOf="@+id/progressBar"
+            app:layout_constraintVertical_bias="0.0"/>
     <ProgressBar
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="300dp"
@@ -32,28 +31,29 @@
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@+id/textView"
             app:layout_constraintHorizontal_bias="0.495" app:layout_constraintVertical_bias="0.651"
-            android:progressTint="#F9A825"/>
+            android:progressTint="#E91E63"/>
     <LinearLayout
             android:orientation="vertical"
-            android:layout_width="300dp"
-            android:layout_height="159dp"
+            android:layout_width="301dp"
+            android:layout_height="169dp"
             app:layout_constraintTop_toBottomOf="@+id/questionText"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toTopOf="@+id/progressBar">
         <TextView
-                android:text="1. Le Jardin" android:onClick="onClickText"
+                android:onClick="onClickText"
                 android:layout_width="match_parent"
-                android:layout_height="49dp" android:id="@+id/answer_1" android:textSize="24sp"
-                android:textColor="#687378" android:textAlignment="viewStart"/>
+                android:layout_height="55dp" android:id="@+id/answer_1" android:textSize="24sp"
+                android:textColor="#282828" android:textAlignment="viewStart"/>
         <TextView
-                android:text="2. Les toilettes" android:onClick="onClickText"
+                android:onClick="onClickText"
                 android:layout_width="match_parent"
-                android:layout_height="45dp" android:id="@+id/answer_2" android:textSize="24sp"
-                android:textAppearance="@style/TextAppearance.AppCompat.Large" android:textColor="#655858"/>
+                android:layout_height="57dp" android:id="@+id/answer_2" android:textSize="24sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" android:textColor="#282828"/>
         <TextView
-                android:text="3. Sur le lit" android:onClick="onClickText"
+                android:onClick="onClickText"
                 android:layout_width="match_parent"
-                android:layout_height="42dp" android:id="@+id/answer_3" android:textSize="24sp"/>
+                android:layout_height="55dp" android:id="@+id/answer_3" android:textSize="24sp"
+                android:textColor="#282828"/>
     </LinearLayout>
     <Button
             android:text="Recommencer"
