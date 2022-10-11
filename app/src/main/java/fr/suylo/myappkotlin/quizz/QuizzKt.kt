@@ -1,17 +1,15 @@
-package fr.suylo.myappkotlin
+package fr.suylo.myappkotlin.quizz
 
 import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.ProgressBar
 import android.widget.TextView
-import org.w3c.dom.Text
-import java.util.StringJoiner
+import fr.suylo.myappkotlin.R
 
-class MainActivity : AppCompatActivity() {
+class QuizzKt : AppCompatActivity() {
     private val qcm = ArrayList<String>()
     companion object {
         private var noQuestion = 1;
@@ -20,7 +18,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.quizz_main)
         val question = findViewById<TextView>(R.id.questionText)
         val askOne = findViewById<TextView>(R.id.answer_1)
         val askTwo = findViewById<TextView>(R.id.answer_2)

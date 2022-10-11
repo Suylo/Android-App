@@ -1,13 +1,15 @@
-package fr.suylo.myappkotlin;
+package fr.suylo.myappkotlin.quizz;
 
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
+import fr.suylo.myappkotlin.R;
 
-public class MainApp extends AppCompatActivity {
+public class QuizzJava extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.quizz_main);
     }
+
 }
