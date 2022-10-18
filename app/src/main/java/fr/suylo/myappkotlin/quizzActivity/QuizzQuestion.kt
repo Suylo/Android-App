@@ -1,12 +1,11 @@
-package fr.suylo.myappkotlin
+package fr.suylo.myappkotlin.quizzActivity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.RadioButton
 import android.widget.RadioGroup
 import android.widget.TextView
-import java.util.StringJoiner
+import fr.suylo.myappkotlin.R
 
 class QuizzQuestion : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -51,7 +50,7 @@ class QuizzQuestion : AppCompatActivity() {
         }
 
         btn.setOnClickListener {
-            val i = Intent(this, QuizzAnswers::class.java)
+            val i = Intent(this, fr.suylo.myappkotlin.quizzActivity.QuizzAnswers::class.java)
             i.putExtra("question", plainText.text.toString())
             launch.launch(i)
         }
