@@ -16,30 +16,26 @@
             android:theme="@style/Theme.MyAppKotlin"
             tools:targetApi="31">
         <activity
-                android:name=".activity.IntentActivityTwo"
+                android:name=".TP2_Activity.IntentActivityTwo"
                 android:exported="false"/>
         <activity
-                android:name=".activity.IntentActivityOne"
+                android:name=".TP2_Activity.IntentActivityOne"
                 android:exported="true">
         </activity>
         <activity
-                android:name=".MainActivity"
+                android:name=".TP3_API.MainActivity"
                 android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
         </activity>
         <activity
-                android:name=".quizz.QuizzKt"
+                android:name=".TP1_Quizz.QuizzKt"
                 android:exported="false">
         </activity>
         <activity
-                android:name=".quizzActivity.QuizzQuestion"
+                android:name=".TP2_QuizzActivity.QuizzQuestion"
                 android:exported="false">
         </activity>
         <activity
-                android:name=".quizzActivity.QuizzScore"
+                android:name=".TP2_QuizzActivity.QuizzScore"
                 android:exported="false">
         </activity>
     </application>

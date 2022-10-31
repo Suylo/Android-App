@@ -1,4 +1,4 @@
-package fr.suylo.myappkotlin.activity
+package fr.suylo.myappkotlin.TP2_Activity
 
 import android.annotation.SuppressLint
 import android.content.Intent

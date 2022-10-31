@@ -1,4 +1,4 @@
-package fr.suylo.myappkotlin.quizz;
+package fr.suylo.myappkotlin.TP1_Quizz;
 
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;

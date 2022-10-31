@@ -1,4 +1,4 @@
-package fr.suylo.myappkotlin.activity
+package fr.suylo.myappkotlin.TP2_Activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

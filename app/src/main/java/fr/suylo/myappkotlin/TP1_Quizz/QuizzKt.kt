@@ -1,4 +1,4 @@
-package fr.suylo.myappkotlin.quizz
+package fr.suylo.myappkotlin.TP1_Quizz
 
 import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity

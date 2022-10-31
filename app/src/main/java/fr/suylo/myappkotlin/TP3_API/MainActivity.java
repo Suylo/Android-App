@@ -1,7 +1,5 @@
-package fr.suylo.myappkotlin;
+package fr.suylo.myappkotlin.TP3_API;
 
-import android.net.Uri;
-import android.util.Log;
 import android.widget.ImageView;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,17 +7,12 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
+import fr.suylo.myappkotlin.R;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
-
-import java.net.MalformedURLException;
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.net.URL;
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
