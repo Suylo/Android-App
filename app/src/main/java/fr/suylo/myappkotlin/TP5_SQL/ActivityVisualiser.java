@@ -21,7 +21,11 @@ public class ActivityVisualiser extends AppCompatActivity {
                 String.join("\n", DBConnect.getInstance(this).getAllCountriesAndCurrencies())
         );
         findViewById(R.id.back).setOnClickListener((v) -> {
-            startActivity(new Intent(this, MainActivity.class));
+            finish();
+        });
+        findViewById(R.id.buttonDelete).setOnClickListener((ac) -> {
+            DBConnect.getInstance(this).dropAllValues();
+            ((TextView) findViewById(R.id.textList)).setText("");
         });
     }
 }

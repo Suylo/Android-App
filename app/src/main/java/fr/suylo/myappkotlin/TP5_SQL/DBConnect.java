@@ -60,6 +60,11 @@ public class DBConnect extends SQLiteOpenHelper {
         return true;
     }
 
+    public void dropAllValues(){
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.execSQL("DELETE FROM " + DB_TABLE_NAME);
+    }
+
     public ArrayList<String> getAllCountriesAndCurrencies(){
         ArrayList<String> res = new ArrayList<>();
         SQLiteDatabase db = this.getReadableDatabase();

@@ -11,14 +11,23 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/textList"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.065" app:layout_constraintVertical_bias="0.101"
-            android:layout_marginBottom="696dp"/>
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.038" app:layout_constraintVertical_bias="0.022"
+            app:layout_constraintTop_toTopOf="parent" android:fontFamily="sans-serif"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:textSize="20sp"/>
     <Button
             android:text="Retour"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/back"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@+id/textList"
-            app:layout_constraintVertical_bias="0.888"/>
+            app:layout_constraintVertical_bias="0.888" app:layout_constraintHorizontal_bias="0.828"/>
+    <Button
+            android:text="Supprimer la table"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/buttonDelete"
+            app:layout_constraintEnd_toStartOf="@+id/back" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="@+id/back"
+            app:layout_constraintHorizontal_bias="0.514" app:layout_constraintVertical_bias="0.0"
+            style="@style/Widget.Material3.Button.ElevatedButton"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
