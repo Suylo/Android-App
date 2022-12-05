@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/nav_graph"
+            app:startDestination="@id/fragmentConfiguration">
+
+    <fragment
+            android:id="@+id/fragmentConfiguration"
+            android:name="fr.suylo.myappkotlin.TP7_Fragments.FragmentConfig"
+            android:label="fragment_configuration"
+            tools:layout="@layout/tp7_fragment_config" >
+        <action
+                android:id="@+id/action_fragmentConfiguration_to_fragmentDisplay"
+                app:destination="@id/fragmentDisplay" />
+    </fragment>
+    <fragment
+            android:id="@+id/fragmentDisplay"
+            android:name="fr.suylo.myappkotlin.TP7_Fragments.MainFragmentDisplay"
+            android:label="fragment_display"
+            tools:layout="@layout/tp7_fragment_display" />
+</navigation>

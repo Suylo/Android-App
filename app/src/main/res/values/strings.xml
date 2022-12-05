@@ -3,4 +3,6 @@
     <string name="quizz_qcm">Quizz - QCM</string>
     <string name="acitvit_2">Acitvité 2</string>
     <string name="ah_il_a_clat">ah il a éclaté..</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
